@@ -1,5 +1,8 @@
-@import "_vars.scss";
+@tailwind preflight;
+@tailwind utilities;
 
+
+@import "_vars.scss";
 
 * {
     box-sizing: border-box;
