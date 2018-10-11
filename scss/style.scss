@@ -1,5 +1,9 @@
+@import "_vars.scss";
+
+
 * {
     box-sizing: border-box;
+
 }
 
 [class*="col-"] {
@@ -63,7 +67,7 @@ html {
     font-family: "Lucida Sans", sans-serif;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
 
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -78,4 +82,32 @@ html {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
     
+}
+
+.menuVerticalContainer {
+	float: left;
+	background-color: $ComplementMainColor;
+	padding: 1px;
+
+	border: 1px;
+}
+
+.menuVerticalContainer li {
+	float: left;
+
+	list-style-type: none;
+	text-align: left;
+	font-size: 20px;
+	border-style: none none none none;
+
+}
+
+.menuVerticalContainer ul {
+	border-style: none;
+	padding: 0px;
+}
+
+.headerContainer {
+	background-color: $MainColor;
+	border-style: none;
 }
