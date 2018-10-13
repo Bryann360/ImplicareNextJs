@@ -12,6 +12,11 @@
 [class*="col-"] {
     width: 100%;
 }
+/*
+@font-face{
+	font-family: caviarDreams;
+	src: url(../static/fonts/caviarDreams/CaviarDreams.ttf);
+}*/
 
 @media only screen and (min-width: 768px) {
 
@@ -89,7 +94,7 @@ html {
 
 .menuVerticalContainer {
 	float: left;
-	background-color: $ComplementMainColor;
+	background-color: $CreamYellow;
 	padding: 1px;
 
 	border: 1px;
@@ -102,6 +107,7 @@ html {
 	text-align: left;
 	font-size: 20px;
 	border-style: none none none none;
+	height: 30vh;
 
 }
 
@@ -111,6 +117,46 @@ html {
 }
 
 .headerContainer {
-	background-color: $MainColor;
+	background-color: $CreamYellow;
+	border-style: none;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	padding-right: 4%;
+	padding-left: 2%;
+	align-content: bottom;
+	position: relative;
+	align-content: center;
+}
+
+html, body{
+	height: 100%;
+}
+
+.footerContainer {
+	background-color: $LemonadeGreen;
+	position: fixed;
+	border-style: none;
+    left: 0;
+    bottom: 0;
+	width: 100%;
+	padding-top: 0%;
+	padding-right: 8.33%;
+	padding-left: 8.33%;
+	padding-bottom: 0%;
+	height: 200px;
+}
+
+.logoImplicare {
+	width: 110px;
+}
+
+.headerDivTitulo, .headerDivImg{
+	vertical-align: bottom;
+	border-style: none;
+	height: 100%;
+}
+
+.footerDiv {
+	
 	border-style: none;
 }
