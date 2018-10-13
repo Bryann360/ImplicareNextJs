@@ -1,4 +1,4 @@
-import "../scss/style.scss";
+import '../scss/style.scss';
 import Link from "next/link";
 import React, { Component } from "react";
 
