@@ -10,72 +10,49 @@ class Footer extends Component {
 	render(){
 		return(
 			<div className="footerContainer col-12">
-
-				<div className="footerDiv col-2">
-					<a>
+				<div className="footerDiv col-3">
+					<p className="footerContent">
                         Labore adipisicing quis culpa esse exercitation.
-					</a>
-					<a>
+					</p>
+					<p className="footerContent">
                         Labore adipisicing quis culpa esse exercitation.
-					</a>
-					<a>
+					</p>
+					<p className="footerContent">
                         Labore adipisicing quis culpa esse exercitation.
-					</a>
+					</p>
 				</div>
-				<div className="footerDiv col-2">
-					<a>
+				<div className="footerDiv col-3">
+					<p className="footerContent">
                         Labore adipisicing quis culpa esse exercitation.
-					</a>
-					<a>
+					</p>
+					<p className="footerContent">
                         Labore adipisicing quis culpa esse exercitation.
-					</a>
-					<a>
+					</p>
+					<p className="footerContent">
                         Labore adipisicing quis culpa esse exercitation.
-					</a>
+					</p>
 				</div>
-				<div className="footerDiv col-2">
-					<a>
+				<div className="footerDiv col-3">
+					<p className="footerContent">
                         Labore adipisicing quis culpa esse exercitation.
-					</a>
-					<a>
+					</p>
+					<p className="footerContent">
                         Labore adipisicing quis culpa esse exercitation.
-					</a>
-					<a>
+					</p>
+					<p className="footerContent">
                         Labore adipisicing quis culpa esse exercitation.
-					</a>
+					</p>
 				</div>
-				<div className="footerDiv col-2">
-					<a>
+				<div className="footerDiv col-3">
+					<p className="footerContent">
                         Labore adipisicing quis culpa esse exercitation.
-					</a>
-					<a>
+					</p >
+					<p className="footerContent">
                         Labore adipisicing quis culpa esse exercitation.
-					</a>
-					<a>
+					</p>
+					<p className="footerContent">
                         Labore adipisicing quis culpa esse exercitation.
-					</a>
-				</div>
-				<div className="footerDiv col-2">
-					<a>
-                        Labore adipisicing quis culpa esse exercitation.
-					</a>
-					<a>
-                        Labore adipisicing quis culpa esse exercitation.
-					</a>
-					<a>
-                        Labore adipisicing quis culpa esse exercitation.
-					</a>
-				</div>
-				<div className="footerDiv col-2">
-					<a>
-                        Labore adipisicing quis culpa esse exercitation.
-					</a>
-					<a>
-                        Labore adipisicing quis culpa esse exercitation.
-					</a>
-					<a>
-                        Labore adipisicing quis culpa esse exercitation.
-					</a>
+					</p>
 				</div>    
 			</div>
 		);

@@ -94,38 +94,39 @@ html {
 
 .menuVerticalContainer {
 	float: left;
-	background-color: $CreamYellow;
-	padding: 1px;
-
-	border: 1px;
+	background-color: $MainColor;
+	height: 90vh;
+	border-style: none;
+	width: 33.33vh;
+	padding-left:0;
 }
 
 .menuVerticalContainer li {
 	float: left;
-
 	list-style-type: none;
 	text-align: left;
 	font-size: 20px;
 	border-style: none none none none;
-	height: 30vh;
-
+	padding-left:0;
 }
 
 .menuVerticalContainer ul {
 	border-style: none;
-	padding: 0px;
+	padding-left: 0;
 }
 
 .headerContainer {
-	background-color: $CreamYellow;
+	background-color: $MainColor;
 	border-style: none;
 	padding-top: 0%;
 	padding-bottom: 0%;
 	padding-right: 4%;
 	padding-left: 2%;
-	align-content: bottom;
 	position: relative;
 	align-content: center;
+	height: 5.5vh;
+	padding-right: 16.66%;
+	padding-left: 16.66%;
 }
 
 html, body{
@@ -133,30 +134,98 @@ html, body{
 }
 
 .footerContainer {
-	background-color: $LemonadeGreen;
+	background-color: $MainColor;
 	position: fixed;
 	border-style: none;
     left: 0;
     bottom: 0;
 	width: 100%;
 	padding-top: 0%;
-	padding-right: 8.33%;
-	padding-left: 8.33%;
+	padding-right: 16.66%;
+	padding-left: 16.66%;
 	padding-bottom: 0%;
 	height: 200px;
 }
 
 .logoImplicare {
-	width: 110px;
+	height: 4vh;
+	position: absolute;
+	top: 0.8vh;
 }
 
-.headerDivTitulo, .headerDivImg{
+.headerDivImg{
+	border-style: none;
+	height: 5.5vh;
+}
+
+.divSeparacao{
 	vertical-align: bottom;
 	border-style: none;
-	height: 100%;
+	height: 5.5vh;
+}
+
+.headerDivSearchBar{
+	border-style: none;
+	height: 5.5vh;
+}
+
+.inputSearch{
+	height: 3.2vh;
+	width: 15vw;
+	padding-left: 10px;
+	background-color: $BlandPurple;
+	opacity: 0.3;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.title{
+	color: $BlandPink;
+	padding-left: 3vw;
+	position: absolute;
+	top: 0.8vh;
+}
+
+.footerContent{
+	color: $BlandPink;
+}
+
+.botaoPesquisa{
+	height: 3.2vh;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding-left: 10px;
+	background-color: $BlandPurple;
+	opacity: 0.3;
+	//background-image: url(../static/icons/userInterface/085-magnifying-glass.png);
+}
+
+.formSearch{
+	position: absolute;
+	top: 1vh;
+}
+
+.menuButton{
+	height: 2.8vh;
+	padding-left: 2vw;
+	position: absolute;
+	top: 1.3vh;
+}
+
+.headerDivMenu{
+	border-style: none;
+	height: 5.5vh;
+}
+
+.botaoMenu{
+	height: 5vh;
+	width: 33vh;
+	align-content: left;
+	padding-left: 2vh;
+	text-align: left;
+	color: $BlandPink;
 }
 
 .footerDiv {
-	
 	border-style: none;
 }
