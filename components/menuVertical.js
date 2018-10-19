@@ -1,6 +1,6 @@
 import '../scss/style.scss';
-import Link from "next/link";
-import React, { Component } from "react";
+import Link from 'next/link';
+import React, { Component } from 'react';
 
 
 class MenuVertical extends Component {
@@ -14,9 +14,18 @@ class MenuVertical extends Component {
 		return (
 			<div className="menuVerticalContainer col-s-3 col-2">
 				<ul className="col-12">
-					<li className="col-12">Cadastro de Vagas</li>
-					<li className="col-12">Gerenciamento de Vagas</li>
-					<li className="col-12">Sair</li>
+					<li className="col-12">
+						<button className="botaoMenu"> Cadastro de Vagas 
+						</button>
+					</li>
+					<li className="col-12">
+						<button className="botaoMenu"> Gerenciamento de Vagas 
+						</button>
+					</li>
+					<li className="col-12">
+						<button className="botaoMenu"> Sair 
+						</button>
+					</li>
 				</ul>
 			</div>
 		);

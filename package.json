@@ -14,6 +14,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
+    "file-loader": "^2.0.0",
     "next": "^7.0.1",
     "node-sass": "^4.9.3",
     "postcss-easy-import": "^3.0.0",
@@ -22,7 +23,8 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "sass-loader": "^7.1.0",
-    "tailwindcss": "^0.6.6"
+    "tailwindcss": "^0.6.6",
+    "url-loader": "^1.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5"
