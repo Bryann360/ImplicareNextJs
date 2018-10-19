@@ -10,11 +10,20 @@ class Header extends Component {
 	render() {
 		return (
 			<div className="headerContainer col-12">
-				<div className= "headerDivImg col-1">
-					<img className="logoImplicare" src="../static/midia/LogoImplicare.png" />
+				<div className= "headerDivImg col-2">
+					<img className= "logoImplicare" src="../static/midia/LogoImplicare.png" />
+					<h1 className="title">Implicare</h1>	
 				</div>
-				<div className= "headerDivTitulo col-3">
-					<h1>Implicare</h1>	
+				<div className="headerDivMenu col-3">
+					<input type="image" className="menuButton" src="../static/icons/userInterface/098-menu.png"/>
+				</div>
+				<div className= "divSeparacao col-4">
+				</div>
+				<div className= "headerDivSearchBar col-3">
+					<form className="formSearch">
+						<input type="text" className="inputSearch" name="Search" placeholder="Search..."/>
+						<input type="submit" value="Find" className="botaoPesquisa" />
+					</form>
 				</div>
 			</div>
 		);
