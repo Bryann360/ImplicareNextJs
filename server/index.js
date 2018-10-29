@@ -15,14 +15,16 @@ app
 			return handle(req, res);
 		});
 
+		server.get("http://localhost:8080/ImplicareApplication/ListarAreaEstudo", (req, res) => {
+			res.send();
+		});
+
 		server.listen(PORT, err =>{
 			if(err) throw err;
 			console.log('> Ready on ${PORT}');
 		});
 
-		server.get("/ListarAreaEstudo", (req, res) => {
-			res.send(req.params);
-		});
+		
 
 	})
 	.catch(ex => {
