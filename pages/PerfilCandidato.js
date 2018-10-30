@@ -4,8 +4,7 @@ import MenuVertical from '../components/menuVertical.js';
 import Header from '../components/Header.js';
 import Footer from '../components/footer.js'
 
-
-const Index = () => (
+const PerfilCandidato = () => (
 	<section>
 		<Header />
 		<MenuVertical />
@@ -17,4 +16,4 @@ const Index = () => (
 	</section>
 );
 
-export default Index;
+export default PerfilCandidato;

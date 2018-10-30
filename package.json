@@ -4,7 +4,7 @@
   "description": "FrontEnd ImplicareProject",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server/index.js"
+    "dev": "nodemon next"
   },
   "license": "MIT",
   "dependencies": {
