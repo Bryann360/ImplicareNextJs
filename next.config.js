@@ -3,6 +3,15 @@ const glob = require('glob');
 
 module.exports = {
 	webpack: (config, { dev }) => {
+
+
+
+        config.plugins.push(
+            new webpack.ProvidePlugin({
+                '$': 'jquery',
+                'jQuery': 'jquery',
+            })
+        )
     
 		config.module.rules.push(
 			{ test: /\.(jpg|png)/, 
