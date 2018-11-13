@@ -6,12 +6,7 @@ module.exports = {
 
 
 
-        config.plugins.push(
-            new webpack.ProvidePlugin({
-                '$': 'jquery',
-                'jQuery': 'jquery',
-            })
-        )
+        
     
 		config.module.rules.push(
 			{ test: /\.(jpg|png)/, 
@@ -49,6 +44,8 @@ module.exports = {
 				]
 			}
 		);
+
+		
 		return config;
 	}
 };

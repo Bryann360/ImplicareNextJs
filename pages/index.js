@@ -1,44 +1,44 @@
-import Link from 'next/link';
-import '../scss/style.scss';
-import MenuVertical from '../components/menuVertical.js';
-import $ from 'jquery';
-import Header from '../components/Header.js';
+import '../scss/style.scss'
+import Link from 'next/link'
+import MenuVertical from '../components/menuVertical.js'
+import Header from '../components/Header.js'
 import Footer from '../components/footer.js'
+import fetch from 'isomorphic-unfetch'
+
+
+export default class index extends React.Component {
+	
+	static async getInitialProps(){
+	  const res = await fetch('http://localhost:8080/ImplicareApplication/ListarAreaEstudo')
+	  const data = await res.json()	
+	  return {data: data} 
+	}
 
 
 
-const Index = () => (
-	  <html>
-        <head>
-          <script src="/static/jquery.js"></script>
-          <script>
-          	function ajaxCall()
-			    {
-				    $.ajax({
-				        type: 'GET',
-				        dataType:"html",
-				        url: "http://localhost:7001/Macaw/MacawServlet",
-				        success:function(data){
-				         alert(data);
-				        },
-				    error:function(){
-				         alert("failure");
-				        }                   
-				    })
-			    }
-          </script>
-        </head>
-        <body>
-			<section>
-				<Header />
-				<MenuVertical />
-				<Footer />
-				<Link href="/about">
-					<a title="About NextJs">Teste</a>
-				</Link>
-			</section>
-		</body>
-      </html>
-);
+	render() {
 
-export default Index;
+		const datas = Array.from(this.props.data)
+
+		return (
+
+			
+				<section>
+
+			    		
+						    <Header />
+							<MenuVertical />
+							<Footer />
+							<ul>			
+								<Link href="/Login">
+							      <a>Log In</a>
+							    </Link>
+						      {datas.map(content => <li key={content.Cod_Area_Estudo}><h3>{content.Cod_Area_Estudo}</h3></li>)}
+						    </ul>
+
+				</section>
+	
+
+		);
+	}
+}
